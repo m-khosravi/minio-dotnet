@@ -1,9 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
     <AssemblyName>Minio</AssemblyName>
     <RootNamespace>Minio</RootNamespace>
-    <TargetFrameworks>net5.0;net6.0;</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1;net5.0;net6.0;</TargetFrameworks>
     <DebugType>embedded</DebugType>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <AssemblyOriginatorKeyFile>..\Minio.snk</AssemblyOriginatorKeyFile>
@@ -31,13 +31,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Crc32.NET" Version="1.2.0"/>
-    <PackageReference Include="SourceLink.Embed.AllSourceFiles" Version="2.8.3" PrivateAssets="All"/>
-    <PackageReference Include="AsyncFixer" Version="1.1.6" PrivateAssets="All"/>
-    <PackageReference Include="System.Net.Http" Version="4.3.4"/>
-    <PackageReference Include="System.Net.Primitives" Version="4.3.1"/>
-    <PackageReference Include="System.Reactive.Linq" Version="5.0.0"/>     
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1"/>
+    <PackageReference Include="Crc32.NET" Version="1.2.0" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="SourceLink.Embed.AllSourceFiles" Version="2.8.3" PrivateAssets="All" />
+    <PackageReference Include="AsyncFixer" Version="1.1.6" PrivateAssets="All" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="System.Net.Primitives" Version="4.3.1" />
+    <PackageReference Include="System.Reactive.Linq" Version="5.0.0" />     
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="System.ValueTuple" Version="4.4.0" />
   </ItemGroup>
 
